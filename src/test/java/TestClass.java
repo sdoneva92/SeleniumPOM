@@ -57,7 +57,7 @@ public class TestClass {
         betsPage.placeABetInStakeTextBox("1.00");
         betsPage.clickOnPlaceAbetButton();
         String afterBetBalance = betsPage.extractBalanceFromBalanceBox();
-        double expectedBalance = Double.parseDouble(startBalance) - 0.50;
+        double expectedBalance = Double.parseDouble(startBalance) - 1.00;
         Assert.assertEquals(expectedBalance, Double.parseDouble(afterBetBalance));
     }
 }
